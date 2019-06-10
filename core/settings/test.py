@@ -25,7 +25,7 @@ SECRET_KEY = '$^ebf@&nb3sswk8pyi8kaf%z4#5c4k9nzz*ic-f*$$y89txrwk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -75,17 +75,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django-qs',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'OPTIONS': {
-            'init_command': ';'.join([
-                'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
-                "SET sql_mode='STRICT_TRANS_TABLES'",
-            ])
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
