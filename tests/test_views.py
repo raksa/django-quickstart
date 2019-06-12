@@ -1,15 +1,15 @@
 import pytest
 import json
 import pytz
-from doorman import serializers as s
+from quiz import serializers as s
 from django.test import RequestFactory
 from django.test import Client
 from django.contrib.auth.models import User
 from rest_framework.authtoken import models as am
 from rest_framework.renderers import JSONRenderer
 
-from doorman import models as m
-from doorman import views as v
+from quiz import models as m
+from quiz import views as v
 
 from datetime import datetime
 
