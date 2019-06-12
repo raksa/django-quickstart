@@ -1,7 +1,7 @@
 all: runcore
 
 test:
-	export DJANGO_SETTINGS_MODULE=core.settings.test; python -m pytest
+	export DJANGO_SETTINGS_MODULE=core.other-settings.test; python -m pytest
 
 runcore:
 	export DJANGO_SETTINGS_MODULE=core.settings; python manage.py runserver 8001
