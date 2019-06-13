@@ -1,0 +1,28 @@
+[
+    {
+        "model": "quiz.question",
+        "pk": 1,
+        "fields": {
+            "question_text": "What is your name?",
+            "pub_date": "2020-10-01T15:22:58.880Z"
+        }
+    },
+    {
+        "model": "quiz.choice",
+        "pk": 1,
+        "fields": {
+            "choice_text": "Racky",
+            "votes": 10,
+            "question": 1
+        }
+    },
+    {
+        "model": "quiz.choice",
+        "pk": 2,
+        "fields": {
+            "choice_text": "Andy",
+            "votes": 4,
+            "question": 1
+        }
+    }
+]

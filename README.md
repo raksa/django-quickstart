@@ -3,8 +3,9 @@
 ## Install dependencies
 * `$ pip install -r requirements.txt`
 
-## Migrate
+## Initialize
 * `$ python manage.py migrate`
+* `$ python manage.py loaddata quiz/data/init.json`
 
 ## Run server
 * `$ make`
