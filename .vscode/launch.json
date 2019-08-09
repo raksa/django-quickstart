@@ -28,7 +28,8 @@
             "env": {
                 "DJANGO_SETTINGS_MODULE": "core.settings"
             },
-            "django": true
+            "django": true,
+            "justMyCode": false
         },
         {
             "name": "Python: pytest",
